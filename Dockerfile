@@ -84,6 +84,8 @@ RUN apt-get -y update \
     /usr/share/doc \
     /usr/share/doc-base
 
+ENV PHP_MEMORY_LIMIT=2G
+
 RUN curl -LO https://getcomposer.org/composer-stable.phar \
     && mv ./composer-stable.phar ./composer.phar \
     && chmod +x ./composer.phar \
