@@ -6,6 +6,7 @@ use Deployer\Exception\Exception;
 
 require 'recipe/common.php';
 
+set('memory_limit', -1);
 set('writable_use_sudo', '{{write_use_sudo}}');
 set('writable_mode', 'chown'); // chmod, chown, chgrp or acl.
 set('deploy_path', "{{deploy_path_custom}}");
